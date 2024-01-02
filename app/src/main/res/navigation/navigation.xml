@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.xperiencelabs.modelviewer.screens.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_viewFragment"
+            app:destination="@id/viewFragment"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_ARFragment"
+            app:destination="@id/ARFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFragment"
+        android:name="com.xperiencelabs.modelviewer.screens.ViewFragment"
+        android:label="fragment_view"
+        tools:layout="@layout/fragment_view" >
+        <action
+            android:id="@+id/action_viewFragment_to_ARFragment"
+            app:destination="@id/ARFragment"
+            app:popUpTo="@id/viewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ARFragment"
+        android:name="com.xperiencelabs.modelviewer.screens.ARFragment"
+        android:label="fragment_a_r"
+        tools:layout="@layout/fragment_a_r" >
+        <argument
+            android:name="data"
+            app:argType="string" />
+    </fragment>
+</navigation>

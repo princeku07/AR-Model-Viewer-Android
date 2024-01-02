@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.HomeFragment"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/model_viewer"
+       android:textColor="@color/white"
+       android:textStyle="bold"
+       android:textSize="@dimen/_15ssp"
+       android:layout_marginTop="@dimen/_45sdp"
+       android:layout_marginHorizontal="@dimen/_15sdp"
+       />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_gravity="center"
+      >
+      <EditText
+          android:id="@+id/model_url"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:autofillHints="Enter Model Url"
+          android:inputType="textUri"
+          android:padding="@dimen/_5sdp"
+          android:hint="@string/enter_model_url"
+          android:background="@drawable/input_text"
+          android:layout_marginHorizontal="@dimen/_15sdp"
+          android:labelFor="@id/model_url"
+          android:layout_gravity="center"
+          />
+          <Button
+              android:id="@+id/view"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:backgroundTint="#464646"
+              android:layout_gravity="center"
+              android:padding="@dimen/_5sdp"
+              android:text="@string/view"
+              android:textColor="@color/white"
+              android:paddingHorizontal="@dimen/_10sdp"
+              android:layout_marginTop="@dimen/_8sdp"
+              android:drawableEnd="@drawable/cube_scan"
+              android:visibility="invisible"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/or"
+          android:textSize="@dimen/_15ssp"
+          android:textColor="#7C7C7C"
+          android:layout_margin="@dimen/_10sdp"
+          android:layout_gravity="center"
+         />
+      <Button
+          android:id="@+id/choose"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableStart="@drawable/baseline_file_upload_24"
+          android:text="@string/choose_model"
+          android:textColor="@color/white"
+          android:backgroundTint="#007BFF"
+          android:layout_gravity="center"
+          android:textSize="@dimen/_12ssp"
+         />
+   </LinearLayout>
+
+
+
+
+
+</FrameLayout>

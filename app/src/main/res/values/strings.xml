@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Model Viewer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="model_viewer">ModelViewer</string>
+    <string name="animation">animation</string>
+    <string name="choose_model">"Choose From Files"</string>
+    <string name="view">View</string>
+    <string name="enter_model_url">Enter Model Url</string>
+    <string name="or">Or</string>
+</resources>
